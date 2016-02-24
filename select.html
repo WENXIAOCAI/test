@@ -5,96 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
     <title>Document</title>
-    <link rel="stylesheet" href="https://github.com/wenxiaocai/test/blob/master/css/style.css">
-    <script src="https://github.com/wenxiaocai/test/blob/master/js/zepto.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/zepto.min.js"></script>
     <script>
     $(function() {
-        // $('#J_proSelector').on({
-        //     // touchstart: function() {
-        //     //     // console.log('touchstart');
-        //     //     oClick = true;
-        //     // },
-        //     // touchmove: function() {
-        //     //     // console.log('touchmove');
-        //     //     oClick = false;
-        //     // },
-        //     touchend: function() {
-        //         // if (oClick) {
-        //             $('#J-screenCover').addClass('show');
-        //         // }
-
-        //     }
-
-        // })
-        // $('.J-selWrap li').on({
-        //     // touchstart: function() {
-        //     //     // console.log('touchstart');
-        //     //     oClickLi = true;
-        //     // },
-        //     // touchmove: function() {
-        //     //     // console.log('touchmove');
-        //     //     oClickLi = false;
-        //     // },
-        //     touchend: function() {
-        //         // if (oClickLi) {
-        //             $(this).addClass('active').siblings().removeClass('active')
-        //                 .parent().parent().prev().find('.selected').html($(this).find('a').html());
-        //         // }
-
-        //     }
-
-        // })
-        // $('.J-foldTrigger').on({
-        //     // touchstart: function() {
-        //     //     // console.log('touchstart');
-        //     //     oClickTrigger = true;
-        //     // },
-        //     // touchmove: function() {
-        //     //     // console.log('touchmove');
-        //     //     oClickTrigger = false;
-        //     // },
-        //     touchend: function() {
-        //         // if (oClickTrigger) {
-        //             var $this = $(this);
-        //             if (!$this.hasClass('hide')) {
-        //                 $this.addClass('hide').next('.J-foldCnt').hide();
-        //             } else {
-        //                 $this.removeClass('hide').next('.J-foldCnt').show();
-        //             }
-        //         // }
-
-        //     }
-
-        // })
-        // $('.mask').on({
-        //     // touchstart: function() {
-        //     //     // console.log('touchstart');
-        //     //     oClickMask = true;
-        //     // },
-        //     // touchmove: function() {
-        //     //     // console.log('touchmove');
-        //     //     oClickMask = false;
-        //     // },
-        //     touchend: function() {
-        //         // if (oClickMask) {
-
-        //             $('#J-screenCover').removeClass('show');
-
-        //         // }
-        //     }
-
-        // })
         $('body')
-            // .on('touchend', '#J_proSelector', function(e) {
-            //     console.log(e);
-            //     console.log('touchend');
-            //     // $('#J-screenCover').addClass('show');
-            // })      
-
-        .on('touchend', '#J_proSelector', function() {
-                    $('#J-screenCover').addClass('show');
-        })
-        .on('touchend', '#J-btnSure', function() {
+            .on('touchend', '#J_proSelector', function() {
+                $('#J-screenCover').addClass('show');
+            })
+            .on('touchend', '#J-btnSure', function() {
                 $('#J-screenCover').removeClass('show');
             })
             .on('click', '#J-screenCnt', function(e) {
@@ -102,19 +21,19 @@
                 console.log('stop');
             })
             .on('touchend', '.mask', function(e) {
-                    $('#J-screenCover').removeClass('show');
+                $('#J-screenCover').removeClass('show');
             })
             .on('touchend', '.J-selWrap li', function(e) {
-                    $(this).addClass('active').siblings().removeClass('active')
-                        .parent().parent().prev().find('.selected').html($(this).find('a').html());
+                $(this).addClass('active').siblings().removeClass('active')
+                    .parent().parent().prev().find('.selected').html($(this).find('a').html());
             })
             .on('touchend', '.J-foldTrigger', function(e) {
-                    var $this = $(this);
-                    if (!$this.hasClass('hide')) {
-                        $this.addClass('hide').next('.J-foldCnt').hide();
-                    } else {
-                        $this.removeClass('hide').next('.J-foldCnt').show();
-                    }
+                var $this = $(this);
+                if (!$this.hasClass('hide')) {
+                    $this.addClass('hide').next('.J-foldCnt').hide();
+                } else {
+                    $this.removeClass('hide').next('.J-foldCnt').show();
+                }
             })
     })
     </script>
@@ -174,7 +93,7 @@
                 </div>
                 <div class="J-foldCnt cnt">
                     <ul class="J-selWrap">
-                            <li><a href="javascript:;">全部</a></li>
+                        <li><a href="javascript:;">全部</a></li>
                         <li><a href="javascript:;">西门子</a></li>
                         <li><a href="javascript:;">ABB</a></li>
                         <li><a href="javascript:;">施耐德</a></li>
@@ -186,7 +105,7 @@
                 </div>
                 <div class="J-foldCnt cnt">
                     <ul class="J-selWrap">
-                            <li><a href="javascript:;">全部</a></li>
+                        <li><a href="javascript:;">全部</a></li>
                         <li><a href="javascript:;">ic65n</a></li>
                         <li><a href="javascript:;">ic65H</a></li>
                         <li><a href="javascript:;">idPNa</a></li>
